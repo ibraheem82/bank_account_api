@@ -35,8 +35,6 @@ router.post(`/`, async (req, res) => {
     await userAccount.save();
 
     // Mask the last four digits of the phone number with asterisks
-    // const maskedNumber = `${bvn.toString().slice(-4)}${'*'.repeat(4)}`;
-    // const maskedNumber = `${bvn.toString().slice(-4)}${'*'.repeat(4)}`;
     const bvnString = bvn.toString();
     const maskedNumber = `${bvnString.slice(0, -4)}${'*'.repeat(4)}`;
 
