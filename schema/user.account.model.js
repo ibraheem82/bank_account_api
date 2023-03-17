@@ -47,6 +47,17 @@ const UserAccountSchema = new mongoose.Schema({
   
 });
 
+/*
+You can test the endpoint with this
+* {
+  "bvn": "1234567890",
+  "phone": "2345678901",
+  "birthYear": "1995",
+  "birthMonth": 3,
+  "birthDate": 17
+}
+*/
+
 
 const UserAccount = mongoose.model('UserAccount', UserAccountSchema);
 
