@@ -11,7 +11,7 @@ const schema = Joi.object({
   birthMonth: Joi.number().required(),
   birthDate: Joi.number().required()
 });
-
+// http://localhost:3000/api/v1/users/
 router.post(`/`, async (req, res) => {
   try {
     const { error, value } = schema.validate(req.body);
